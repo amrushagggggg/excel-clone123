@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" . />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+
+
+
+    <title>Excel Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-bar">Excel clone</div>
+        <div class="menubar">
+            <div class="file menu-baritem">file</div>
+            <div class="home menu-baritem">home</div>
+            <div class="insert menu-baritem">insert</div>
+            <div class="pagelayout menu-baritem">pagelayout</div>
+            <div class="format menu-baritem">format</div>
+            <div class="data menu-baritem">data</div>
+            <div class="review menu-baritem">review</div>
+            <div class="help menu-baritem">help</div>
+
+        </div>
+
+        <div class="menu-iconbar">
+            <span class="material-icons menuicons">
+                assignment
+            </span>
+
+            <span class="material-icons menuicons">
+                content_cut
+            </span>
+            <span class="material-icons menuicons">
+                content_copy
+            </span>
+            <span class="material-icons menuicons">
+                content_paste
+            </span>
+            <select class="menu-selector" id="font-family">
+
+            <option style="font-family: Noto Sans;" value="Noto Sans">Noto Sans</option>
+            <option style="font-family:Arial" value="Arial">Arial</option>
+            <option style="font-family:Calibri" value="Calibri">Calibri</option>
+            <option style="font-family:Comic Sans MS" value="Comic Sans MS">Comic Sans MS</option>
+            <option style="font-family:Courier New" value="Courier New">Courier New</option>
+            <option style="font-family:Impact" value="Impact">Impact</option>
+            <option style="font-family:Georgia" value="Georgia">Georgia</option>
+            <option style="font-family:Garamond" value="Garamond">Garamond</option>
+            <option style="font-family:Lato" value="Lato">Lato</option>
+            <option style="font-family:Open Sans" value="Open Sans">Open Sans</option>
+            <option style="font-family:Palatino" value="Palatino">Palatino</option>
+            <option style="font-family:Verdana" value="Verdana">Verdana</option>
+            </select>
+            <select class="menu-selector" id="font-size">
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14" selected="true">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="32">32</option>
+            </select>
+            <div class="material-icons menu-icon" id="bold">format_bold</div>
+            <div class="material-icons menu-icon" id="italic">format_italic</div>
+            <div class="material-icons menu-icon" id="underlined">format_underlined</div>
+            <div class="material-icons menu-icon color-pick" id="fill-color"><img id="fill-color-icon" src="https://img.icons8.com/material-sharp/20/000000/fill-color.png"/></div>
+            <div class="material-icons menu-icon color-pick" id="text-color"><img id="text-color-icon" src="https://img.icons8.com/ios-filled/20/000000/generic-text-filled.png"/></div>
+            <div class="material-icons menu-icon alignment selected" data-type="left">format_align_left</div>
+            <div class="material-icons menu-icon alignment" data-type="center">format_align_center</div>
+            <div class="material-icons menu-icon alignment" data-type="right">format_align_right</div>
+        </div>
+
+         
+
+        <div class="formula-bar"> 
+            
+            <div class="namebox"></div>  
+        <div class="formula-sign"><i class="fas fa-plus"></i></div>
+        <input class ="formula-editor" type="text"></input>
+
+</div>
+
+        <div class="data-container ">
+
+            <div class="selectAll"></div>
+            <div class="col-name-container">
+            </div>
+            <div class="row-name-container">
+            </div>
+
+            <div class="input-container">
+                <!-- <div class="input-cells" contenteditable="true"></div> -->
+                <!-- <div class="input-cells" contenteditable="true"> -->
+    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sheet-bar " style="display:flex ;">
+
+
+
+            <div class="scoller">
+                <span class="material-icons">
+                    arrow_left
+                </span>
+                <span class="material-icons">
+                    arrow_right
+                </span>
+                <span class="material-icons scroller1 ">
+                    add_circle
+                </span>
+                sheet1
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
